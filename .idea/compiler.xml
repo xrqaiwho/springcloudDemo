@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ribbon" />
+        <module name="zuul-filter" />
+        <module name="eureka-movie" />
+        <module name="feign" />
+        <module name="feign-with-hystrix" />
+        <module name="eurekauser" />
+        <module name="feign-with-hystrix-factroy" />
+        <module name="zuul-fallback" />
+        <module name="ribbon-with-hystrix" />
+        <module name="zuul" />
+        <module name="eurekagao-keyong1" />
+        <module name="file-upload" />
+        <module name="eureka" />
+        <module name="hystrix-dashboard" />
+        <module name="hystrix-turbine" />
+        <module name="gateway-zuul-reg-exp" />
+        <module name="feign-configration" />
+        <module name="eureka-gaokeyong3" />
+        <module name="eureka-gaokeyong2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gateway-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,40 @@
+
+server:
+  port: 7900
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+  application:
+    name: user
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.itmuch: DEBUG
+eureka:
+  client:
+    healthcheck: #健康检查
+      enabled: true
+    serviceUrl:
+       defaultZone: http://user:password123@localhost:8761/eureka
+     # defaultZone: http://localhost:8761/eureka,http://localhost:8762/eureka,http://localhost:8763/eureka 高可用配置
+  instance:
+    prefer-ip-address: true # 让eureka管理页显示IP地址和端口
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    metadata-map:
+      zone: ABC       #是eureka可以理解的元数据,可能影响到客户端的行为
+      line-data: DBCW #不会影响客户端行为
+    lease-renewal-interval-in-seconds: 5 #配置的是快速同步eureka客户端和服务端的本地缓存,当服务端和客户端本地缓存不一样,会进行3次同步.也就是默认的90秒
+    appname: user-haha
+user:  #user服务负载均衡不影响别的负载均衡 例如这个随机,没有影响到电影的轮询
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

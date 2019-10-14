@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-gaokeyong1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-gaokeyong2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-gaokeyong3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-movie" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign-configration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign-with-hystrix" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign-with-hystrix-factroy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/file-upload" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-zuul-reg-exp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-turbine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ribbon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ribbon-with-hystrix" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-fallback" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-filter" charset="UTF-8" />
+  </component>
+</project>

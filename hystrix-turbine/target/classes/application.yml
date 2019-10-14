@@ -1,0 +1,25 @@
+server:
+  port: 8031
+spring:
+  application:
+    name: turbine
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true # 让eureka管理页显示IP地址和端口
+
+# turbine:     集群的配置,不同的服务以,号分割
+ # aggregator:
+   # clusterConfig: RIBBON-WITH-HYSTRIX,USER
+  # appConfig: ribbon-with-hystrix,user
+turbine: #第二种配法
+  aggregator:
+    clusterConfig: default
+  appConfig: feign-with-hystrix,ribbon-with-hystrix
+  clusterNameExpression: "'default'"
+
+
+
+

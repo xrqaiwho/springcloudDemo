@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: gateway-zuul
+server:
+  port: 8040
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+zuul:
+  #prefix: /api  #http://localhost:8040/api/user/simple/1
+  strip-prefix: false #默认是true  #这样配置的是全局的 例如:http://localhost:8040/api/user/xxx这样的后缀,user微服务中的controller路径
+  prefix: /simple  #strip-prefix: false 和prefix结合使用 http://localhost:8040/simple/user/1

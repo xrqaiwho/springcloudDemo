@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ribbon-with-hystrix
+server:
+  port: 8010
+  #context-path: /ribbon #http:localhost:8010/ribbon
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true # 让eureka管理页显示IP地址和端口
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+   # home-page-url-path: /ribbon #http:localhost:8010/ribbon
