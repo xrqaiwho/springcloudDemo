@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri:  https://github.com/xrqawho/springcloudConfig
+  application:
+    name: config-server-eureka
+eureka:
+  client:
+    healthcheck: #健康检查
+      enabled: true
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true # 让eureka管理页显示IP地址和端口
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: password123

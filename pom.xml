@@ -23,8 +23,6 @@
         <module>feign-with-hystrix-factroy</module>
         <module>hystrix-turbine</module>
         <module>hystrix-dashboard</module>
-        <module>gateway-zuul</module>
-        <module>gateway-zuul</module>
         <module>zuul</module>
         <module>gateway-zuul-reg-exp</module>
         <module>file-upload</module>
@@ -32,6 +30,10 @@
         <module>zuul-filter</module>
         <module>config-server</module>
         <module>config-client</module>
+        <module>config-server-security</module>
+        <module>config-client-security</module>
+        <module>configServer-eureka</module>
+        <module>configclient-eureka</module>
     </modules>
 
 
