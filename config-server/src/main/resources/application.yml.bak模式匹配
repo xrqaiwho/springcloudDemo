@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xrqawho/springcloudConfig # 通配符 共用
+          repos:
+            simple: https://github.com/xrqawho/simple
+            special:
+              pattern: special*/dev*,special*/test*
+              uri: https://github.com/xrqawho/special
+          #local:
+           # pattern: local*
+           # url: file:/home/config/config-pro

@@ -31,6 +31,7 @@
         <module>zuul-fallback</module>
         <module>zuul-filter</module>
         <module>config-server</module>
+        <module>config-client</module>
     </modules>
 
 
