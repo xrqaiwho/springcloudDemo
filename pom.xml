@@ -34,6 +34,7 @@
         <module>config-client-security</module>
         <module>configServer-eureka</module>
         <module>configclient-eureka</module>
+        <module>springcloud-swagger</module>
     </modules>
 
 
