@@ -35,6 +35,7 @@
         <module>configServer-eureka</module>
         <module>configclient-eureka</module>
         <module>springcloud-swagger</module>
+        <module>annotation-using</module>
     </modules>
 
 
