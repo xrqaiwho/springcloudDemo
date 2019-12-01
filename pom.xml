@@ -36,6 +36,7 @@
         <module>configclient-eureka</module>
         <module>springcloud-swagger</module>
         <module>annotation-using</module>
+        <module>config-reflush-bus</module>
     </modules>
 
 
