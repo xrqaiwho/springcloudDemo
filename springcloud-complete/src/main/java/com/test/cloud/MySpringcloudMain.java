@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan("com.test.cloud.dao")  //这个部分用于进行dao层的扫描
+@MapperScan(basePackages = "com.test.*")  //这个部分用于进行dao层的扫描
 public class MySpringcloudMain  {
 
     public static void main(String[] args) {
