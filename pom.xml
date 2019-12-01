@@ -37,6 +37,7 @@
         <module>springcloud-swagger</module>
         <module>annotation-using</module>
         <module>config-reflush-bus</module>
+        <module>springcloud-complete</module>
     </modules>
 
 

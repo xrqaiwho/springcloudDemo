@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: test
+  datasource:
+    url: jdbc:mysql://localhost:3306/crm?charactorEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8080
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true # 让eureka管理页显示IP地址和端口
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    status-page-url: http://${spring.cloud.client.ipAddress}:${server.port}/swagger-ui.html
+    # ${server.port}为该服务的端口号
+    # http://localhost:8080/swagger-ui.html 访问的地址
+
+    #mybatis
+mybatis:
+  mapper-locations:  classpath:dao/*Mapper.xml     #这个设置是用于关联 **Mapper.xml 文件的
+  type-aliases-package: bean
